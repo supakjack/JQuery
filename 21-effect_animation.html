@@ -10,14 +10,17 @@
 
     <script type="text/javascript" languge="javascript">
         $(document).ready(function (){ 
-           $("div").click(function (){  
-                $(this).replaceWith("<h1>JQuery is Great</h1>")
-           })
+            $('#show').click(function (){
+                $(".mydiv").show('slow')
+            })
+            $('#hide').click(function (){
+                $('.mydiv').hide('fast')
+            })
         })
     </script>
 
     <style>
-        #division{
+        .mydiv{
             margin: 10px;
             padding: 12px;
             border: 2px solid #666;
@@ -29,12 +32,9 @@
 
 <body>
 
-   <p>click on the square below:</p>
-    <span id="result"></span>
-
-   <div id="division" style="background-color:blue;">
-        This is blue square
-    </div>
+   <div class="mydiv">this is a square</div>
+   <input id="hide" type="button" value="hide">
+   <input id="show" type="button" value="show">
 
 </body>
 

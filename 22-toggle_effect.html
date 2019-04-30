@@ -10,17 +10,18 @@
 
     <script type="text/javascript" languge="javascript">
         $(document).ready(function (){ 
-           $("div").click(function (){  
-                $(this).replaceWith("<h1>JQuery is Great</h1>")
-           })
+            $(".clickme").click(function(){
+                $(".target").toggle('slow')
+            })
         })
     </script>
 
     <style>
-        #division{
+        .clickme{
             margin: 10px;
             padding: 12px;
             border: 2px solid #666;
+            width: 100px;
             width: 60px;
         }
     </style>
@@ -29,13 +30,12 @@
 
 <body>
 
-   <p>click on the square below:</p>
-    <span id="result"></span>
-
-   <div id="division" style="background-color:blue;">
-        This is blue square
-    </div>
-
+   <div class="content">
+        <div class="clickme">Click Me</div>
+        <div class="target">
+            <img src="./images/dog1.jpg" alt="jq" width="300">
+        </div>
+   </div>
 </body>
 
 </html>

@@ -10,18 +10,20 @@
 
     <script type="text/javascript" languge="javascript">
         $(document).ready(function (){ 
-           $("div").click(function (){  
-                $(this).replaceWith("<h1>JQuery is Great</h1>")
-           })
+           $("div").animate({
+               height:'500px'
+           },1000)
         })
     </script>
 
     <style>
-        #division{
+        .mydiv{
+            background:red; 
             margin: 10px;
             padding: 12px;
             border: 2px solid #666;
             width: 60px;
+            position: absolute;
         }
     </style>
 
@@ -29,13 +31,8 @@
 
 <body>
 
-   <p>click on the square below:</p>
-    <span id="result"></span>
-
-   <div id="division" style="background-color:blue;">
-        This is blue square
-    </div>
-
+   <div class="mydiv">this is a square</div>
+   
 </body>
 
 </html>

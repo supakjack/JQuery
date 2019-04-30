@@ -11,7 +11,7 @@
     <script type="text/javascript" languge="javascript">
         $(document).ready(function (){ 
            $("div").click(function (){  
-                $(this).replaceWith("<h1>JQuery is Great</h1>")
+                $(this).before("<div id='division'></div>")
            })
         })
     </script>
@@ -29,11 +29,14 @@
 
 <body>
 
-   <p>click on the square below:</p>
+   <p>click on any square below:</p>
     <span id="result"></span>
 
-   <div id="division" style="background-color:blue;">
-        This is blue square
+    <div id="division" style="background-color:blue;">
+    </div>
+    <div id="division" style="background-color:green;">
+    </div>
+    <div id="division" style="background-color:red;">
     </div>
 
 </body>
