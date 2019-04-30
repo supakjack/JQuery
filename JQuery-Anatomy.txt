@@ -1,0 +1,8 @@
+$("div").css("background-color","yellow");
+  selector
+         method
+              parameter
+
+$(document).ready(function(){
+    //javascript code here
+})

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Selector Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" languge="javascript">
+        $(document).ready(function () {
+           // $('div').css('background-color', 'yellow')
+           //$('#div1').css('background-color', 'yellow')
+           //$('#div1, #div2').css('background-color', 'yellow')
+           //$('.small').css('background-color', 'yellow')
+           //$('*').css('background-color', 'yellow')
+           $('div p').css('background-color', 'yellow')
+           $('div.small span').css('color', 'red')
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="big" id="div1">
+        <p>This is first division of the DOM.</p>
+    </div>
+
+    <div class="medium" id="div2">
+        <p>This is second division of the DOM.</p>
+    </div>
+
+    <div class="small" id="div3">
+        <span>This is third division of the DOM.</span>
+    </div>
+
+</body>
+
+</html>
