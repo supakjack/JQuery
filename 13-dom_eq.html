@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Selector Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" languge="javascript">
+        $(document).ready(function () {
+            $('li').eq(2).addClass("selected")
+        })
+    </script>
+
+    <style>
+        .selected{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+   <div>
+       <ul>
+           <li>list item 1</li>
+           <li>list item 2</li>
+           <li>list item 3</li>
+           <li>list item 4</li>
+           <li>list item 5</li>
+           <li>list item 6</li>
+       </ul>
+   </div>
+
+</body>
+
+</html>

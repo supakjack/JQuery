@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Selector Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" languge="javascript">
+        $(document).ready(function () {
+            $('#result1').text($("p#p1").hasClass("red"))
+            $('#result2').text($("p#p2").hasClass("green"))
+            $('#result3').text($("p#p2").hasClass("red"))
+        })
+    </script>
+
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p class="red" id="p1">this is first paragraph</p>
+    <p class="green" id="p2">this is second paragraph</p>
+
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+
+</body>
+
+</html>
